@@ -1,0 +1,164 @@
+/* font style  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+ /* header */ 
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #2d25a0;
+  padding-bottom: 40px;
+}
+.header1 {
+  align-items: center;
+}
+.header1 h1 {
+  width: 485px;
+  line-height: 80px;
+  font-size: 64px;
+  margin-left: 156px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.header1 a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 24px;
+  background-color: #e02c6d;
+  margin-left: 156px;
+}
+.header2 img {
+  margin-top: 45px;
+  margin-right: 60px;
+  width: 556px;
+  height: 438px;
+}
+#copy-icon:after {
+  content: "\00a9";
+}
+.header2:hover img {
+  transform: scale(1.2) ;
+  transition: transform 2s ease;
+}
+
+.section-title {
+  text-align: center;
+  padding: 50px 0;
+}
+/* main  */
+
+.player-album {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 40px 100px;
+  grid-gap: 30px;
+}
+.player-frame {
+  box-shadow: 10px 10px 50px gray;
+}
+.player-photo img {
+  width: 300px;
+  height: 256px;
+  margin: 15px;
+}
+.player-details {
+  margin: 15px;
+}
+.player-details p {
+  color: gray;
+}
+
+/* winners  */
+
+.winners {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  margin-left: 150px;
+  margin-bottom: 60px;
+  
+}
+.winners-name .banner img {
+  width: 224px;
+  height: 104px;
+  
+}
+
+
+/* footer */
+footer {
+  text-align: center;
+}
+.footer-logo img {
+  width: 400px;
+  height: 100px;
+}
+.footer-icons {
+  padding-bottom: 20px;
+  text-align: center;
+}
+.footer-icons i {
+  width: 32px;
+  height: 32px;
+  color: #969bab;
+}
+.copyright {
+  padding-bottom: 40px;
+}
+/* Responsive for mobile */
+@media only screen and (max-width: 688px) {
+  .header {
+    width: 100%;
+    flex-direction: column;
+  }
+  .header1{
+    justify-content: center;
+  }
+  .header1 h1 {
+    width: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 56px;
+  }
+  .header1 a {
+    text-align: left;
+  }
+  .header2 img {
+    margin-top: 40px;
+    width: 80%;
+    height: 80%;
+  }
+  .all-legends {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .winners {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px 80px;
+  }
+  .player-album {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px 10px;
+  }
+  .player-details {
+    margin: 15px;
+  }
+  .tournament {
+    margin-bottom: 20px;
+  }
+  .legend {
+    flex-direction: column;
+  }
+  .footer-logo img {
+    width: 80%;
+    height: 80%;
+  }
+}
+
